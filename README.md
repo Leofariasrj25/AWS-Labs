@@ -1,4 +1,9 @@
-# AWS Labs
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" width="200"/>
+</p>
+
+<h1 align="center">AWS Labs</h1>
+
 <p align="center">
   <!-- Status -->
   <img src="https://img.shields.io/badge/status-active-success?style=for-the-badge" alt="status" />
@@ -13,24 +18,25 @@
   <img src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=for-the-badge&logo=github" alt="contributions welcome" />
   
   <!-- Stars (auto updates with repo name) -->
-  <img src="https://img.shields.io/github/stars/USERNAME/REPO?style=for-the-badge&logo=github" alt="stars" />
+  <img src="https://img.shields.io/github/stars/leofariasrj25/AWS-Labs?style=for-the-badge&logo=github" alt="stars" />
   
   <!-- Last commit -->
-  <img src="https://img.shields.io/github/last-commit/USERNAME/REPO?style=for-the-badge&logo=git" alt="last commit" />
+  <img src="https://img.shields.io/github/last-commit/leofariasrj25/AWS-Labs?style=for-the-badge&logo=git" alt="last commit" />
 </p>
+
 ---
+
 🇺🇸 **English**  
 This repository contains a collection of AWS training labs. Each lab can be accessed through its corresponding HTML file.
-
-## ⚠️ Disclaimer
-
-Some labs may not work as intended because they depend on pre-configured services or specific AWS scenarios. However, they still provide great value for self-study, as you can explore the steps, commands, and concepts involved.  
 
 🇧🇷 **Português (BR)**  
 Este repositório contém uma coleção de laboratórios de treinamento AWS. Cada laboratório pode ser acessado através do seu respectivo arquivo HTML.
 
-## ⚠️ Aviso
-Alguns laboratórios podem não funcionar exatamente como o esperado, pois dependem de serviços já configurados ou cenários específicos na AWS. Mesmo assim, eles ainda oferecem muito valor para estudo autodidata, permitindo explorar os passos, comandos e conceitos envolvidos.  
+## ⚠️ Disclaimer / Aviso
+
+🇺🇸 Some labs may not work as intended because they depend on pre-configured services or specific AWS scenarios. However, they still provide great value for self-study, as you can explore the steps, commands, and concepts involved.  
+
+🇧🇷 Alguns laboratórios podem não funcionar exatamente como o esperado, pois dependem de serviços já configurados ou cenários específicos na AWS. Mesmo assim, eles ainda oferecem muito valor para estudo autodidata, permitindo explorar os passos, comandos e conceitos envolvidos.  
 
 ---
 
