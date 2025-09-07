@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<!-- saved from url=(0161)https://labs.vocareum.com/web/4180640/4207962.0/ASNLIB/public/docs/lang/en-us/README.html?vockey=0560fdd563690e7cb85a6698cc75410f1244182dab45b7526414722251aba957 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<link href="./lab187_files/all.css" rel="stylesheet" type="text/css"><style type="text/css">html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; white-space: nowrap; background-position: inherit; background-repeat: inherit; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; border: none !important; background-position: 0px 0px !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; background-position: 0px 0px; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-style: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-style: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background-color: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+/*
+Version: v1.4
+1. Updated colour to be more accessible.
+2. Included FontAwesome link directly in the css.
+3. Imported Buttons CSS.
+4. Updated font to Amazon Ember.
+*/
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #333333;
+}
+
+/* Importing Font Awesome */
+@import url("file:///Users/chandyk/Library/Application%20Support/abnerworks.Typora/themes/");
+
+/* @include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext); /*
+
+
+/* Adding button support */
+#ssb_alexa_blue {
+background-color: #3366ff;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #3366ff;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_alexa_ocean {
+background-color: #00a0d2;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #00a0d2;
+white-space: nowrap
+}
+#ssb_alexa_sand {
+background-color: #f2f2f2;
+font-weight: bold;
+font-size: 90%;
+color: #00a0d2;
+position: relative;
+top: -1px;
+border-color: #dcdcdc;
+border-style: solid;
+border-width: 2px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_alexa_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #00a0d2;
+position: relative;
+top: -1px;
+border-color: #00a0d2;
+border-style: solid;
+border-width: 2px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_blue {
+background-color: #257ACF;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+border-radius: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_catalog_orange {
+background-color: #E36000;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+border-radius: 1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_catalog_red {
+background-color: #D90000;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+border-radius: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_dark_blue {
+color: white;
+background-color: darkblue;
+border-radius: 3px;
+padding: 0px 6px;
+white-space: nowrap
+}
+#ssb_grafana_blue {
+background-color: #00678b;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #00678b;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_grafana_green {
+background-color: #629300;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #629300;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_grafana_orange {
+background-color: #ec8427;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #ec8427;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_grey {
+background-color: #DEDEDE;
+font-weight: bold;
+font-size: 90%;
+color: #444;
+position: relative;
+top: -1px;
+border-radius: 5px;
+border-width: 1px;
+border-style: solid;
+border-color: #444;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_grey_square {
+background-color: #DEDEDE;
+font-weight: bold;
+font-size: 90%;
+color: #444;
+position: relative;
+top: -1px;
+border-radius: 1px;
+border-width: 1px;
+border-style: solid;
+border-color: #444;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_iot_blue {
+background-color: #00A1C9;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #00A1C9;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_iot_grey {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: gray;
+position: relative;
+top: -1px;
+border-color: gray;
+border-radius: 2px;
+border-style: solid;
+border-width: 1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_iot_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #00A1C9;
+position: relative;
+top: -1px;
+border-color: #00A1C9;
+border-radius: 2px;
+border-style: solid;
+border-width: 1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_kibana_blue {
+background-color: #0079a5;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #0079a5;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_kibana_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #0079a5;
+position: relative;
+top: -1px;
+border-color: #0079a5;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_lambda_orange {
+background-color: #ec7211;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_lambda_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #545b64;
+position: relative;
+top: -1px;
+border-color: #545b64;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_maroon {
+color: white;
+background-color: darkred;
+border-radius: 3px;
+padding: 0px 6px;
+white-space: nowrap
+}
+#ssb_orange {
+background-color: #ec7211;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssl_orange {
+color: #ec7211;
+font-weight: bold
+}
+#ssb_orange_oval {
+background-color: #ec7211;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 20px;
+white-space: nowrap
+}
+#ssb_oval {
+background-color: #DEDEDE;
+font-weight: bold;
+font-size: 90%;
+color: #444;
+position: relative;
+top: -1px;
+border-radius: 20px;
+border-width: 1px;
+border-style: solid;
+border-color: #444;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_start_lab {
+background-color: #34A853;
+font-weight: bold;
+font-size: 90%;
+color: white;
+border-radius: 2px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 3px;
+padding-bottom: 3px
+}
+#ssb_open_console {
+background-color: white;
+font-family: Google Sans;
+font-weight: bold;
+font-size: 90%;
+color: #1a73e8;
+border-color: #dadce0;
+border-radius: 4px;
+border-width: 2px;
+border-style: solid;
+outline-color: #ffffff;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 10px;
+padding-right: 10px
+}
+#ssb_rds_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #545b64;
+position: relative;
+top: -1px;
+border-color: #545b64;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_red {
+background-color: #D93025;
+font-weight: bold;
+font-size: 90%;
+color: white;
+border-radius: 2px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 3px;
+padding-bottom: 3px
+}
+#ssb_red_oval {
+background-color: #D93025;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 20px;
+white-space: nowrap
+}
+#ssb_s3_blue {
+background-color: #329AD6;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_s3_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #329AD6;
+position: relative;
+top: -1px;
+border-color: #329AD6;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_services {
+background-color: #232f3e;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_square_lex {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #1166bb;
+position: relative;
+top: -1px;
+border-color: #c4cbcd;
+border-style: solid;
+border-width: 2px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px
+}
+#ssb_ssm_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #545b64;
+position: relative;
+top: -1px;
+border-color: #545b64;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #545b64;
+position: relative;
+top: -1px;
+border-color: #545b64;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssbox_cloudformation_blue {
+font-weight: bold;
+background-color: #f1faff;
+font-size: 90%;
+border-color: #00A1C9;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssl_alexa_ocean {
+color: #00a0d2;
+font-weight: bold
+}
+#ssl_blue {
+color: #1166bb;
+font-weight: bold
+}
+#ssl_catalog_orange {
+color: #E16706;
+font-weight: bold
+}
+#ssb_codestar_blue {
+background-color: #329AD6;
+font-weight: bold;
+font-size: 80%;
+color: white;
+position: relative;
+top: -1px;
+border-radius: 1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_cognito_blue {
+background-color: #2a7fd4;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #0055aa;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_eb_blue {
+background-color: #0f6dca;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #0055aa;
+border-width: 1px;
+border-style: solid;
+border-radius: 4px;
+white-space: nowrap;
+}
+#ssb_eb_grey {
+background-color: #e5e5e5;
+font-weight: bold;
+font-size: 90%;
+color: 444444;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #bbbbbb;
+border-width: 1px;
+border-style: solid;
+border-radius: 4px;
+white-space: nowrap
+}
+#ssb_voc_grey {
+background-color: #F2F3F4;
+font-size: 90%;
+color: black;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: grey;
+border-width: 1px;
+border-style: solid;
+white-space: nowrap
+}
+
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Amazon Ember", "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #0071bc;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #5b616b;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #5b616b; /*#777777*/
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #323a45;  /*#777777*/
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #323a45; /*a7a7a7*/
+    opacity: 1;
+}
+
+.md-toc {
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #ffffff;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #981b1e;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0));
+}
+
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>README</title>
+<!-- START Inserted by CORE -->
+<style type="text/css">
+   #ssb_alexa_blue {
+   background-color: #3366ff;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #3366ff;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_alexa_ocean {
+   background-color: #00a0d2;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #00a0d2;
+   white-space: nowrap
+   }
+   #ssb_alexa_sand {
+   background-color: #f2f2f2;
+   font-weight: bold;
+   font-size: 90%;
+   color: #00a0d2;
+   position: relative;
+   top: -1px;
+   border-color: #dcdcdc;
+   border-style: solid;
+   border-width: 2px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_alexa_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #00a0d2;
+   position: relative;
+   top: -1px;
+   border-color: #00a0d2;
+   border-style: solid;
+   border-width: 2px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_blue {
+   background-color: #257ACF;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   border-radius: 5px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_catalog_orange {
+   background-color: #E36000;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   border-radius: 1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_catalog_red {
+   background-color: #D90000;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   border-radius: 5px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_dark_blue {
+   color: white;
+   background-color: darkblue;
+   border-radius: 3px;
+   padding: 0px 6px;
+   white-space: nowrap
+   }
+   #ssb_grafana_blue {
+   background-color: #00678b;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #00678b;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_grafana_green {
+   background-color: #629300;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #629300;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_grafana_orange {
+   background-color: #ec8427;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #ec8427;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_grey {
+   background-color: #DEDEDE;
+   font-weight: bold;
+   font-size: 90%;
+   color: #444;
+   position: relative;
+   top: -1px;
+   border-radius: 5px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: #444;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_grey_square {
+   background-color: #DEDEDE;
+   font-weight: bold;
+   font-size: 90%;
+   color: #444;
+   position: relative;
+   top: -1px;
+   border-radius: 1px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: #444;
+   padding-top: 2px;
+   padding-bottom: 2px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_iot_blue {
+   background-color: #00A1C9;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #00A1C9;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_iot_grey {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: gray;
+   position: relative;
+   top: -1px;
+   border-color: gray;
+   border-radius: 2px;
+   border-style: solid;
+   border-width: 1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_iot_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #00A1C9;
+   position: relative;
+   top: -1px;
+   border-color: #00A1C9;
+   border-radius: 2px;
+   border-style: solid;
+   border-width: 1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_kibana_blue {
+   background-color: #0079a5;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #0079a5;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_kibana_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #0079a5;
+   position: relative;
+   top: -1px;
+   border-color: #0079a5;
+   border-radius: 2px;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_lambda_orange {
+   background-color: #ec7211;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_lambda_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #545b64;
+   position: relative;
+   top: -1px;
+   border-color: #545b64;
+   border-radius: 2px;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_maroon {
+   color: white;
+   background-color: darkred;
+   border-radius: 3px;
+   padding: 0px 6px;
+   white-space: nowrap
+   }
+   #ssb_orange {
+   background-color: #ec7211;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssl_orange {
+   color: #ec7211;
+   font-weight: bold
+   }
+   #ssb_orange_oval {
+   background-color: #ec7211;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius: 20px;
+   white-space: nowrap
+   }
+   #ssb_oval {
+   background-color: #DEDEDE;
+   font-weight: bold;
+   font-size: 90%;
+   color: #444;
+   position: relative;
+   top: -1px;
+   border-radius: 20px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: #444;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssb_start_lab {
+   background-color: #34A853;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   border-radius: 2px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 3px;
+   padding-bottom: 3px
+   }
+   #ssb_open_console {
+   background-color: white;
+   font-family: Google Sans;
+   font-weight: bold;
+   font-size: 90%;
+   color: #1a73e8;
+   border-color: #dadce0;
+   border-radius: 4px;
+   border-width: 2px;
+   border-style: solid;
+   outline-color: #ffffff;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 10px;
+   padding-right: 10px
+   }
+   #ssb_rds_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #545b64;
+   position: relative;
+   top: -1px;
+   border-color: #545b64;
+   border-radius: 2px;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssb_red {
+   background-color: #D93025;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   border-radius: 2px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 3px;
+   padding-bottom: 3px
+   }
+   #ssb_red_oval {
+   background-color: #D93025;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius: 20px;
+   white-space: nowrap
+   }
+   #ssb_s3_blue {
+   background-color: #329AD6;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssb_s3_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #329AD6;
+   position: relative;
+   top: -1px;
+   border-color: #329AD6;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssb_services {
+   background-color: #232f3e;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssb_square_lex {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #1166bb;
+   position: relative;
+   top: -1px;
+   border-color: #c4cbcd;
+   border-style: solid;
+   border-width: 2px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px
+   }
+   #ssb_ssm_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #545b64;
+   position: relative;
+   top: -1px;
+   border-color: #545b64;
+   border-radius: 2px;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssb_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #545b64;
+   position: relative;
+   top: -1px;
+   border-color: #545b64;
+   border-radius: 2px;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssbox_cloudformation_blue {
+   font-weight: bold;
+   background-color: #f1faff;
+   font-size: 90%;
+   border-color: #00A1C9;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssl_alexa_ocean {
+   color: #00a0d2;
+   font-weight: bold
+   }
+   #ssl_blue {
+   color: #1166bb;
+   font-weight: bold
+   }
+   #ssl_catalog_orange {
+   color: #E16706;
+   font-weight: bold
+   }
+   #ssb_codestar_blue {
+   background-color: #329AD6;
+   font-weight: bold;
+   font-size: 80%;
+   color: white;
+   position: relative;
+   top: -1px;
+   border-radius: 1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_cognito_blue {
+   background-color: #2a7fd4;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #0055aa;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_eb_blue {
+   background-color: #0f6dca;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #0055aa;
+   border-width: 1px;
+   border-style: solid;
+   border-radius: 4px;
+   white-space: nowrap;
+   }
+   #ssb_eb_grey {
+   background-color: #e5e5e5;
+   font-weight: bold;
+   font-size: 90%;
+   color: 444444;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #bbbbbb;
+   border-width: 1px;
+   border-style: solid;
+   border-radius: 4px;
+   white-space: nowrap
+   }
+   #ssb_voc_grey {
+   background-color: #F2F3F4;
+   font-size: 90%;
+   color: black;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: grey;
+   border-width: 1px;
+   border-style: solid;
+   white-space: nowrap
+   }
+   </style>
+<!-- END Inserted by CORE -->
+
+<!-- START Inserted by CORE -->
+<link rel="stylesheet" href="./lab187_files/all(1).css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<style>
+	.ssb_qwiklab_green{
+		background-color: yellowgreen;
+		font-weight: bold;
+		font-size: 90%;
+		color: white;
+		border-radius: 5px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding-left: 10px;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	.ssb_blue {
+		background-color: #257ACF;
+		font-weight: bold;
+		font-size: 90%;
+		color: white;
+		border-radius: 5px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding-left: 10px;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	.ssb_voc_grey {
+		background-color: #F2F3F4;
+		font-weight: normal;
+		font-size: 90%;
+		color: black;
+		border-radius: 3px;
+		border: 1px solid gray;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 6px;
+		padding-right: 6px;
+		white-space: nowrap;
+	}
+	.ssb_grey {
+		background-color: #DEDEDE;
+		font-weight: bold;
+		font-size: 90%;
+		color: #444;
+		position: relative;
+		top:-1px;
+		border-radius: 5px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #444;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding-left: 10px;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	.ssl_alexa_ocean {
+		color: #00a0d2;
+		font-weight: bold;
+	}
+
+ 	.ssb_services {
+		background-color:#232f3e;
+		font-weight:bold;
+		font-size:90%;
+		color:white;
+		padding-top:3px;
+		padding-bottom:3px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+	.ssb_orange {
+		background-color:#ec7211;
+		font-weight:bold;
+		font-size:90%;
+		color:white;
+		padding-top:3px;
+		padding-bottom:3px;
+		padding-left:10px;
+		padding-right:10px;
+		white-space:
+		nowrap;
+	}
+	.ssbox_cloudformation_blue {
+		font-weight:bold;
+		background-color:#f1faff;
+		font-size:90%;
+		border-color:#00A1C9;
+		border-width:1px;
+		border-style:solid;
+		padding-top:3px;
+		padding-bottom:3px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.ssb_ssm_white {
+		background-color:white;
+		font-weight:bold;
+		font-size:90%;
+		color:#545b64;
+		border-color:#545b64;
+		border-radius:2px;
+		border-width:1px;
+		border-style:solid;
+		padding-top:3px;
+		padding-bottom:3px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+</style>
+
+<!-- END Inserted by CORE -->
+
+<style type="text/css">* {<br>        -webkit-user-select: text !important;<br>        -moz-user-select: text !important;<br>        -ms-user-select: text !important;<br>         user-select: text !important;<br>    }</style></head>
+<body class="typora-export os-windows"><div class="typora-export-content">
+<div id="write" class=""><h1 id="working-with-aws-cloudtrail"><span>Working with AWS CloudTrail</span></h1><!---
+Note for Translators: This lab is based on Academy Cloud Operations. You should be able to copy a lot of translated text from that lab.
+--><p>&nbsp;</p><h2 id="activity-overview"><span>Activity overview</span></h2><p><span>In this activity, you create an AWS CloudTrail trail that audits actions taken in your account. You then investigate to determine who modified the Café website.</span></p><p><span>The activity starts with an Amazon Elastic Compute Cloud (Amazon EC2) instance named </span><strong><span>Café Web Server</span></strong><span>, which runs a web application that hosts the Café website.</span></p><ul><li><p><span>In </span><strong><span>Task 1</span></strong><span>, you observe that the website looks normal.</span></p></li><li><p><span>In </span><strong><span>Task 2</span></strong><span>, soon after you create a trail with CloudTrail, you notice that the website has been hacked and that part of the hack involved an action during which someone modified the security group settings.</span></p></li><li><p><span>In </span><strong><span>Task 3</span></strong><span>, you use a variety of methods to analyze the CloudTrail logs, including the Linux grep utility and the AWS Command Line Interface (AWS CLI).</span></p></li><li><p><span>In </span><strong><span>Task 4</span></strong><span>, you use Amazon Athena to search the CloudTrail logs.</span></p><ul><li><span>In the </span><strong><span>Challenge</span></strong><span> section that concludes Task 4, you work to identify the hacker.</span></li></ul></li><li><p><span>In </span><strong><span>Task 5</span></strong><span>, now that you have discovered the culprit, you remove that user's access. You also take steps to reduce the chances that the AWS account and the Café website will be hacked again.</span></p></li></ul><p><span>  The architectural diagram illustrates the setup that this activity uses.</span></p><p><img src="./lab187_files/architecture.png" alt="architectural diagram" width="800"></p><p><strong><span>Duration</span></strong></p><p><span>This lab requires approximately </span><strong><span>75 minutes</span></strong><span> to complete.</span></p><p>&nbsp;</p><h2 id="activity-objectives"><span>Activity objectives</span></h2><p><span>After completing this activity, you will be able to:</span></p><ul><li><span>Configure a CloudTrail trail</span></li><li><span>Analyze CloudTrail logs by using various methods to discover relevant information</span></li><li><span>Import CloudTrail log data into Athena</span></li><li><span>Run queries in Athena to filter CloudTrail log entries</span></li><li><span>Resolve security concerns within the AWS account and on an EC2 Linux instance</span></li></ul><p>&nbsp;</p><h2 id="business-case-relevance"><span>Business case relevance</span></h2><p><strong><span>A new request from the Café leadership team</span></strong></p><p><img src="./lab187_files/Coffee-Shop.png" alt="cafe scene"></p><p>&nbsp;</p><p><span>Martha and Frank are concerned because the website was hacked. They are relying on you to discover who did it and to make sure that it does not happen again.</span></p><p><span>Faythe, Frank, Martha, and others make frequent changes to the website, and sometimes those changes cause issues. Also, this morning, it looks like the website was hacked. Martha and Frank are asking Sofîa if there is a way to track what was changed and who made the changes.</span></p><p><span>Play the role of Sofîa, become a detective, and discover the culprit.</span></p><p>&nbsp;</p><h2 id="activity-steps"><span>Activity steps</span></h2><p>&nbsp;</p><h2 id="launching-the-activity-environment"><span>Launching the activity environment</span></h2><ol start=""><li><p><span>At the top of these instructions, select </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> to launch your lab.</span></p><p><span>A Start Lab panel opens displaying the lab status. </span></p></li><li><p><span>Wait until you see the message </span><strong><span>Lab status: ready</span></strong><span>, and then select the </span><strong><span>X</span></strong><span> to close the Start Lab panel.</span></p></li><li><p><span>At the top of these instructions, select </span><span id="ssb_voc_grey"><span>AWS</span></span></p><p><span>This step opens the AWS Management Console in a new browser tab. The system automatically logs you in.</span></p><p><strong><span>Tip</span></strong><span>: If a new browser tab does not open, a banner or icon at the top of your browser typically indicates that your browser is preventing the site from opening pop-up windows. Select the banner or icon, and choose </span><strong><span>Allow pop-ups</span></strong><span>.</span></p></li><li><p><span>Arrange the AWS Management Console tab so that it displays alongside these instructions. Ideally, you should be able to see both browser tabs at the same time to make it easier to follow the lab steps.</span></p></li></ol><p>&nbsp;</p><h2 id="task-1-modifying-a-security-group-and-observing-the-website"><span>Task 1: Modifying a security group and observing the website</span></h2><ol start="5"><li><p><span>From the </span><strong><span>Services</span></strong><span> menu, choose </span><strong><span>Compute</span></strong><span> then the </span><strong><span>EC2</span></strong><span> service.</span></p></li><li><p><span>Choose </span><strong><span>Instances</span></strong><span>, and then locate and select the </span><strong><span>Café Web Server (WebSecurityGroup)</span></strong><span> instance.</span></p></li><li><p><span>In the </span><strong><span>Security</span></strong><span> tab, choose the </span><strong><span>sg-xxxxxxxxxx</span></strong><span> security group.</span></p></li><li><p><span>In the </span><strong><span>Inbound rules</span></strong><span> tab, notice that only one inbound rule has been defined, which is for HTTP access over TCP port 80.</span></p></li><li><p><span>Choose </span><strong><span>Edit inbound rules</span></strong><span>, and then choose </span><strong><span>Add rule</span></strong><span> and configure the rule as follows:</span></p><ul><li><strong><span>Type</span></strong><span>: Select </span><strong><span>SSH</span></strong></li><li><strong><span>Port Range</span></strong><span>: Enter </span><code>22</code></li><li><strong><span>Source</span></strong><span>: Enter </span><code>My IP</code></li></ul><p><strong><span>Important</span></strong><span>: Confirm that the TCP port 22 access will be open to only your IP address. The entry should show a Classless Inter-Domain Routing (CIDR) block that has a particular IP address followed by /32, not to all IP addresses (which would be shown by 0.0.0.0/0).</span></p></li><li><p><span>At the bottom of the page, choose </span><strong><span>Save rules</span></strong><span>.</span></p></li><li><p><span>Observe the Café website:</span></p><ul><li><span>Choose </span><strong><span>Instances</span></strong><span>, select the </span><strong><span>Café Web Server</span></strong><span> instance. Click the </span><strong><span>Details</span></strong><span> tab  and copy the </span><strong><span>Public IPv4 address</span></strong><span> value </span></li><li><span>Open a new browser tab, and navigate to http://&lt;WebServerIP</span><span>&gt;</span><span>/cafe/ (substitute the </span><em><span>&lt;WebServerIP</span><span>&gt;</span></em><span> value).</span></li><li><span>Notice that the website looks normal. For example, the photos are all appropriate for a bakery café.</span></li></ul></li></ol><p>&nbsp;</p><h2 id="task-2-creating-a-cloudtrail-log-and-observing-the-hacked-website"><span>Task 2: Creating a CloudTrail log and observing the hacked website</span></h2><p><span>In this task, you create a CloudTrail trail in your AWS account. You also notice that soon after creating the trail, the Café website is hacked.</span></p><p>&nbsp;</p><h3 id="task-21-create-a-cloudtrail-log"><span>Task 2.1: Create a CloudTrail log</span></h3><ol start="12"><li><p><span>In the AWS Management Console, from the </span><strong><span>Services</span></strong><span> menu, select </span><strong><span>Management &amp; Governance</span></strong><span> then </span><strong><span>CloudTrail</span></strong><span>. Ignore the AWSOrganizations access denied message at the top of the console.</span></p></li><li><p><span>On the navigation pane on the left, choose </span><strong><span>Trails</span></strong><span>. </span></p><p><span>If the navigation pane is not displayed, choose the three icon of the horizontal lines </span><i class="fas fa-bars"></i><span> on the top left of the screen. </span>
+<span>If you encounter the following warning </span><em><span>The option to create an organization trail is not available for this AWS account</span></em><span>, you can ignore it.</span></p></li><li><p><span>Choose </span><span id="ssb_orange"><span>Create trail</span></span></p></li><li><p><span>Configure the trail as follows:</span></p><ul><li><span>For </span><strong><span>Trail name</span></strong><span>, enter </span><code>monitor</code><span> </span>
+<strong><span>Important</span></strong><span>: Verify that you set the </span><strong><span>Trail name</span></strong><span> to </span><strong><span>monitor</span></strong><span>, or this activity will not work as intended.</span></li><li><span>Select </span><i class="fas fa-dot-circle" style="color:#0073BB;"></i><span>Create a new S3 bucket.</span></li><li><span>For </span><strong><span>Trail log bucket and folder</span></strong><span>, enter  </span><code>monitoring####</code><span> (the </span><strong><span>####</span></strong><span> characters are four random digits).</span></li><li><span>For </span><strong><span>AWS KMS alias</span></strong><span>, enter your initials followed by </span><code>-KMS</code><span> (for example, </span><strong><span>kc-KMS</span></strong><span>).</span></li></ul></li><li><p><span>Choose </span><span id="ssb_orange"><span>Next </span></span></p></li><li><p><span>On the </span><strong><span>Choose log events</span></strong><span> page, choose </span><span id="ssb_orange"><span>Next</span></span></p></li><li><p><span>On the </span><strong><span>Review and create</span></strong><span> page, choose </span><span id="ssb_orange"><span>Create trail</span></span></p></li><li><p><span>Verify that you see your trail on the </span><strong><span>Trails</span></strong><span> page.</span></p></li></ol><p>&nbsp;</p><h3 id="task-22-observe-the-hacked-website"><span>Task 2.2: Observe the hacked website</span></h3><ol start="20"><li><p><span>Return to the browser tab where you have the Café website open, and refresh the page.</span></p><p><strong><span>Important</span></strong><span>: You might need to wait a full minute before the hack will occur. Also, your browser may be caching the images on this website. Press and hold Shift while you also choose the browser refresh button in order to see the latest changes to the website.</span></p><p><span>Notice that the website has been hacked. Who put that image there? The image certainly does not look correct.</span></p><p><span>It is up to you to figure out who hacked the website.</span></p><p><span>It is good that you enabled CloudTrail before this happened. CloudTrail can give you valuable information about what users have been doing in your account.</span></p></li><li><p><span>In the AWS Management Console, browse to the </span><strong><span>EC2</span></strong><span> service, and observe the </span><strong><span>Café Web Server</span></strong><span> instance details.</span></p><p><span>Does anything look suspicious?</span></p></li><li><p><span>In the </span><strong><span>Security</span></strong><span> tab, choose the </span><strong><span>sg-xxxxxxxxxx</span></strong><span> security group again, and then choose the </span><strong><span>Inbound rules</span></strong><span> tab.</span></p><p><span>Where did that extra entry come from?</span></p><p><span>You still see the entry you created earlier: the rule that opens port 22 to only your IP address. However, you also now see that someone else created an additional inbound rule that allows Secure Shell (SSH) access from anywhere (0.0.0.0/0).</span></p><p><span>Who added this security hole? You can search the CloudTrail logs to find out.</span></p></li></ol><p>&nbsp;</p><h2 id="task-3-analyzing-the-cloudtrail-logs-by-using-grep"><span>Task 3: Analyzing the CloudTrail logs by using grep</span></h2><p><span>In this task, you analyze the CloudTrail logs by using the grep Linux utility to see if you can figure out who hacked the website.</span></p><p>&nbsp;</p><h3 id="task-31-connect-to-the-café-web-server-host-ec2-instance-by-using-ssh"><span>Task 3.1: Connect to the Café Web Server host EC2 instance by using SSH</span></h3><p><span>In this task, you connect to the Café Web Server EC2 instance. You use SSH to connect to the instance.</span></p><p><span>Windows users should follow Task 3.2 for Windows. Both macOS and Linux users should follow Task 3.2 for macOS/Linux.</span></p><p><a href="https://labs.vocareum.com/web/4180640/4207962.0/ASNLIB/public/docs/lang/en-us/README.html?vockey=0560fdd563690e7cb85a6698cc75410f1244182dab45b7526414722251aba957#ssh-MACLinux" target="_blank" rel="noopener noreferrer"><span>macOS/Linux users: visit this link for login instructions</span></a></p><p>&nbsp;</p><h3 id="task-32-for-windows-ssh"><span>Task 3.2 for Windows: SSH</span></h3><p><i class="fas fa-comment"></i><span> These instructions are specifically for Windows users. If you are using macOS or Linux, </span><a href="https://labs.vocareum.com/web/4180640/4207962.0/ASNLIB/public/docs/lang/en-us/README.html?vockey=0560fdd563690e7cb85a6698cc75410f1244182dab45b7526414722251aba957#ssh-MACLinux" target="_blank" rel="noopener noreferrer"><span>skip to the next section</span></a><span>.</span></p><ol start="23"><li><p><span>Select the </span><span id="ssb_voc_grey"><span>Details</span></span><span> drop-down menu above these instructions you are currently reading, and then select </span><span id="ssb_voc_grey"><span>Show</span></span><span>. A Credentials window will be presented.</span></p></li><li><p><span>Select the </span><strong><span>Download PPK</span></strong><span> button and save the </span><strong><span>labsuser.ppk</span></strong><span> file.</span>
+<em><span>Typically your browser will save it to the Downloads directory.</span></em></p></li><li><p><span>Make a note of the </span><strong><span>PublicIP</span></strong><span> address.</span></p></li><li><p><span>Then exit the Details panel by selecting the </span><strong><span>X</span></strong><span>.</span></p></li><li><p><span>Download  </span><strong><span>PuTTY</span></strong><span> to SSH into the Amazon EC2 instance. If you do not have PuTTY installed on your computer, </span><a href="https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe" target="_blank" rel="noopener noreferrer"><span>download it here</span></a><span>.</span></p></li><li><p><span>Open </span><strong><span>putty.exe</span></strong></p></li><li><p><span>Configure your PuTTY session by following the directions in the following link: </span><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-from-windows.html" target="_blank" rel="noopener noreferrer"><span>Connect to your Linux instance using PuTTY</span></a></p></li><li><p><span>Windows Users: </span><a href="https://labs.vocareum.com/web/4180640/4207962.0/ASNLIB/public/docs/lang/en-us/README.html?vockey=0560fdd563690e7cb85a6698cc75410f1244182dab45b7526414722251aba957#ssh-after" target="_blank" rel="noopener noreferrer"><span>Select here to skip ahead to the next task.</span></a></p><p><a id="ssh-MACLinux"></a></p></li></ol><p>&nbsp;</p><h3 id="task-32-for-macoslinux-ssh"><span>Task 3.2 for macOS/Linux: SSH</span></h3><p><span>These instructions are for Mac/Linux users only. If you are a Windows user, </span><a href="https://labs.vocareum.com/web/4180640/4207962.0/ASNLIB/public/docs/lang/en-us/README.html?vockey=0560fdd563690e7cb85a6698cc75410f1244182dab45b7526414722251aba957#ssh-after" target="_blank" rel="noopener noreferrer"><span>skip ahead to the next task.</span></a></p><ol start="31"><li><p><span>Read through the three bullet points in this step before you start to complete the actions because you will not be able see these instructions when the </span><strong><span>Details</span></strong><span> panel is open.</span></p><ul><li><p><span>Choose the </span><span id="ssb_voc_grey"><span>Details</span></span><span> dropdown menu above these instructions, and then choose </span><span id="ssb_voc_grey"><span>Show</span></span></p><p><span>A Credentials window will open.</span></p></li><li><p><span>Chose the </span><strong><span>Download PEM</span></strong><span> button, and save the </span><strong><span>labsuser.pem</span></strong><span> file.</span></p></li><li><p><span>To exit the </span><strong><span>Details</span></strong><span> panel, choose the </span><strong><span>X</span></strong><span>.</span></p></li></ul></li><li><p><span>Open a terminal window, and change the </span><code>cd</code><span> directory to the directory where the labsuser.pem file was downloaded.</span></p><p><span>For example, run the following command if the file was saved to your Downloads directory:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> ~/Downloads</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre></li><li><p><span>To change the permissions on the key to be read only, run the following command:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">chmod 400 labsuser.pem</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre></li><li><p><span>Return to the AWS Management Console, and in the EC2 service, choose </span><strong><span>Instances</span></strong><span>. Select the check box next to the Café Web Server instance, and choose the </span><strong><span>Description</span></strong><span> tab.</span></p></li><li><p><span>Copy the </span><strong><span>IPv4 Public IP</span></strong><span> value.</span></p></li><li><p><span>Return to the terminal window, and run the following command (replace </span><strong><span>&lt;public-ip</span><span>&gt;</span></strong><span> with the actual public IP address you copied):</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">ssh -i labsuser.pem ec2-user@&lt;public-ip&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre></li><li><p><span>When prompted, type </span><code>yes</code><span> to allow a first connection to this remote SSH server.</span></p><p><span>Because you are using a key pair for authentication, you will not be prompted for a password.</span></p><!-- KB: Is the line below supposed to show up? I don't see anything here in Vocareum. --></li></ol><p><a id="ssh-after"></a></p><p>&nbsp;</p><h3 id="task-33-download-and-extract-the-cloudtrail-logs"><span>Task 3.3: Download and extract the CloudTrail logs</span></h3><ol start="38"><li><p><span>Verify that your terminal is connected via SSH to the Café Web Server EC2 instance.</span></p></li><li><p><span>Run the following command to create a local directory on the web server to download the CloudTrail log files to:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mkdir ctraillogs</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre></li><li><p><span>Run the following command to change the directory to the new directory:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">cd ctraillogs</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre></li><li><p><span>Run the following command to list the buckets to recall the bucket name:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws s3 ls</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre></li><li><p><span>In the command below, replace </span><em><span>&lt;monitoring####</span><span>&gt;</span></em><span> with the actual bucket name that starts with </span><strong><span>monitoring</span></strong><span> (the bucket name is part of the output from the </span><code>ls</code><span> command that you ran). Run the adjusted command to download the CloudTrail logs:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws s3 cp s3://&lt;monitoring####&gt;/ . --recursive</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre><p><span>If the command is successful, you should see that a few log files are downloaded.</span></p><p><strong><span>Important:</span></strong><span> If there was no output in the command line when you ran the last command, it likely means that not enough time has passed since you created the CloudWatch trail. CloudWatch posts logs to Amazon Simple Storage Service (Amazon S3) every 5 minutes. You might need to wait and try running the command again. Do not proceed to the next step until you have downloaded at least one log file.</span></p></li><li><p><span>Use the </span><code>cd</code><span> and </span><code>ls</code><span> commands repeatedly (or enter </span><code>cd</code><span> and then press Tab multiple times) as necessary to change the directory to the subdirectory where the logs were downloaded. When you run </span><code>ls</code><span>, all of the downloaded log files should display. They will be located in an </span><strong><span>AWSLogs/</span>&lt;<span>account-num</span>&gt;<span>/CloudTrail/</span>&lt;<span>Region</span>&gt;<span>/</span>&lt;<span>yyyy</span>&gt;<span>/</span>&lt;<span>mm</span>&gt;<span>/</span>&lt;<span>dd</span>&gt;</strong><span> subdirectory.</span></p><p><span>Notice that the log files end in json.gz, which indicates that they are compressed as GNU zip files.</span></p></li><li><p><span>Run the following command to extract the logs:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">gunzip *.gz</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre></li><li><p><span>Run </span><code>ls</code><span> again. Notice that all files are now extracted.</span></p></li></ol><p>&nbsp;</p><h3 id="task-34-analyze-the-logs-by-using-grep"><span>Task 3.4: Analyze the logs by using grep</span></h3><p><span>In this section of the activity, you use the Linux grep utility to analyze the CloudTrail logs.</span></p><ol start="46"><li><p><span>To analyze the structure of the logs, do the following:</span></p><ul><li><span>Copy one of the file names returned by the </span><code>ls</code><span> command that you ran.</span></li><li><span>Enter </span><code>cat</code><span> in the terminal window, followed by a space, and then paste the copied file name. Run the command.</span></li><li><span>Note that the files are in JavaScript Object Notation (JSON) format. However, it is difficult to read them in this output format.</span></li><li><span>Run the </span><code>cat</code><span> command again, but this time format the output (replace </span><em>&lt;<span>filename.json</span>&gt;</em><span> with the actual file name):</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">cat &lt;filename.json&gt; | python -m json.tool</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre><p><span>This format is more readable. You can now also see the structure of the log entries. Notice that each entry contains the same standard fields, including awsRegion, eventName, eventSource, eventTime, requestParameters, sourceIPAddress, userIdentity, and more.</span></p><p><span>The graphic below shows an example log entry.</span></p><p><img src="./lab187_files/example-log-entry.png" alt="example log entry" width="500"></p><p><span>You can now read the log entries. However, the number of entries—even in just this one log file—can be large. You might have downloaded more than one log because new log files are created over time. You need to find a way to search log entries across multiple files and also filter the results.</span></p></li><li><p><span>Consider how you want to target the search. You are not interested in everything that is happening in this account. Instead, your interest is in an action that was taken on a particular EC2 instance (that is, the web server that was hacked).</span></p><p><span>Start by filtering the log results where the </span><strong><span>sourceIpAddress</span></strong><span> matches the IP address of the Café Web Server instance.</span></p><p><span>Run the following command to set the WebServerIP address as a variable that you can use in future commands (replace </span><em>&lt;<span>WebServerIP</span>&gt;</em><span> with the actual IP address that displays to the left of these instructions):</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">ip=&lt;WebServerIP&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre></li><li><p><span>Run the following command:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.1689px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">for i in $(ls); do echo $i &amp;&amp; cat $i | python -m json.tool | grep sourceIPAddress ; done</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 49px;"></div><div class="CodeMirror-gutters" style="display: none; height: 49px;"></div></div></div></pre><p><span>The command you ran does the following:</span></p><ul><li><span>It creates a </span><strong><span>for</span></strong><span> loop that includes the names of the files in the current directory.</span></li><li><span>During each iteration of the for loop, it echoes the file name and then prints the contents of the file in JSON format.</span></li><li><span>Only the lines of JSON that contain the sourceIPAddress tag are printed.</span></li></ul><p><span>Note that there are several log entries in the trail where the </span><strong><span>sourceIPAddress</span></strong><span> was the Café Web Server instance.</span></p></li><li><p><span>Run a similarly structured command but where the command returns the </span><strong><span>eventName</span></strong><span> of every captured event:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.1687px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">for i in $(ls); do echo $i &amp;&amp; cat $i | python -m json.tool | grep eventName ; done</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 49px;"></div><div class="CodeMirror-gutters" style="display: none; height: 49px;"></div></div></div></pre><p><span>The command you ran follows the same logic as the command you ran before, but this time, it filters log entries for the </span><strong><span>eventName</span></strong><span>.</span></p><p><span>The results of the previous command contain different details. Many </span><strong><span>describe</span></strong><span> and </span><strong><span>list</span></strong><span> actions were recorded, and they look relatively harmless. However, if you scroll through the list, you notice that occasional </span><strong><span>update</span></strong><span> actions were also recorded. You could use a text editor like vi to open a log that contains a recorded event that you want to know more about. You can then search for that eventName and look at the details.</span></p><p><span>However, you might benefit from using a different tool other than grep to locate these log entries more easily.</span></p></li></ol><p>&nbsp;</p><h3 id="task-35-analyze-the-logs-by-using-aws-cli-cloudtrail-commands"><span>Task 3.5: Analyze the logs by using AWS CLI CloudTrail commands</span></h3><p><span>Another approach you can use to analyze CloudTrail logs is to use AWS CLI CloudTrail commands.</span></p><ol start="50"><li><p><span>Open the </span><a href="https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/index.html" target="_blank" rel="noopener noreferrer"><span>AWS CLI Reference page for CloudTrail</span></a><span>.</span></p></li><li><p><span>Choose the </span><strong><span>lookup-events</span></strong><span> command to see details about the command.</span></p><ul><li><span>Notice that you can look up events based on one of eight different attributes, including AWS access key, event name, user name, and others.</span></li><li><span>In the AWS CLI Command Reference page, scroll to the </span><strong><span>Example</span></strong><span>, which shows how to filter the trail for console logins. Run that command in your terminal window:</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.1689px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws cloudtrail lookup-events --lookup-attributes AttributeKey=EventName,AttributeValue=ConsoleLogin</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 49px;"></div><div class="CodeMirror-gutters" style="display: none; height: 49px;"></div></div></div></pre><p><span>The results indicate there have been no console login events or that the only user who has logged into the console is the same user that you are logged into the console as</span></p><p><span>However, there are other ways to modify resources on AWS instead of using the console. The hacker might have used a different approach.</span></p></li><li><p><span>Run the following command to find any actions that were taken on security groups in the AWS account:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.1687px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws cloudtrail lookup-events --lookup-attributes AttributeKey=ResourceType,AttributeValue=AWS::EC2::SecurityGroup --output text</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 74px;"></div><div class="CodeMirror-gutters" style="display: none; height: 74px;"></div></div></div></pre><p><span>Something in this result set might contain some information that would help you discover what happened, but there might be too many results for you to easily identify the issue.</span></p><p><span>Perhaps you can narrow the search results further so that you get only the results related to the security group that is used by the web server instance.</span></p></li><li><p><span>Run the following commands to find the security group ID that is used by the Café Web Server instance, and then echo the result to the terminal:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.1687px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">region=$(curl http://169.254.169.254/latest/dynamic/instance-identity/document|grep region | cut -d '"' -f4)</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sgId=$(aws ec2 describe-instances --filters "Name=tag:Name,Values='Cafe Web Server'" --query 'Reservations[*].Instances[*].SecurityGroups[*].[GroupId]' --region $region --output text)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">echo $sgId</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 197px;"></div><div class="CodeMirror-gutters" style="display: none; height: 197px;"></div></div></div></pre><p><span>Notice that a single security group ID was found.</span></p></li><li><p><span>Now use the security group ID that the previous command returned to further filter your AWS CLI CloudTrail command results:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.1687px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws cloudtrail lookup-events --lookup-attributes AttributeKey=ResourceType,AttributeValue=AWS::EC2::SecurityGroup --region $region --output text | grep $sgId</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 99px;"></div><div class="CodeMirror-gutters" style="display: none; height: 99px;"></div></div></div></pre><p><span>You could keep experimenting with different commands to filter the log results. However, you might wonder whether there is a better tool or solution for reading these logs. AWS has the AWS Partner Network (APN), where companies specialize in helping AWS customers with this challenge. See </span><a href="https://aws.amazon.com/cloudtrail/partners/" target="_blank" rel="noopener noreferrer"></a><a href="https://aws.amazon.com/cloudtrail/partners/" target="_blank" class="url" rel="noopener noreferrer">https://aws.amazon.com/cloudtrail/partners/</a><span> for a listing of APN Partner solutions.</span></p><p><span>The APN Partner solutions suit the needs of many AWS customers. However, for the purposes of this activity, there is one additional approach to examining CloudTrail log files that you might use, and it uses another AWS service. In the next task, you explore CloudTrail logs by using Athena.</span></p></li></ol><p>&nbsp;</p><h2 id="task-4-analyzing-the-cloudtrail-logs-by-using-athena"><span>Task 4: Analyzing the CloudTrail logs by using Athena</span></h2><p><span>As you experienced in the previous task, it can be difficult to find specific information within a very large dataset. CloudTrail logs are verbose for a reason: you might want to know every relevant detail about a particular action that was taken in your AWS account. However, using command line tools to filter the logs can be tedious.</span></p><p><span>It would be convenient if all the log data were in a database and you could use structured query language (SQL) queries to search for the log entries that you are most interested in. Athena provides such a solution. Athena is an interactive query service that makes it easy to analyze data in Amazon S3 by using standard SQL.</span></p><p><span>In this task, you use Athena to analyze your CloudTrail logs.</span></p><p>&nbsp;</p><h3 id="task-41-create-the-athena-table"><span>Task 4.1: Create the Athena table</span></h3><ol start="55"><li><p><span>From the AWS Management Console </span><strong><span>Services</span></strong><span> menu, choose </span><strong><span>CloudTrail</span></strong><span> to open the CloudTrail console.</span></p></li><li><p><span>In the navigation pane, choose </span><strong><span>Event history</span></strong><span>.</span></p><p><span>Notice that CloudTrail provides this event history interface where you can apply filters and conduct a basic search based on parameters, such as </span><strong><span>Event name</span></strong><span> or </span><strong><span>Resource type</span></strong><span>. The </span><strong><span>Event history</span></strong><span> page can be a useful tool, and you are free to explore it. However, in this activity, you use Athena.</span></p></li><li><p><span>From the </span><strong><span>Event history</span></strong><span> page, click </span><strong><span>Create Athena table</span></strong></p><ul><li><strong><span>Storage location</span></strong><span>: Choose the </span><strong><span>monitoring####</span></strong><span> S3 bucket where you configured CloudTrail to store log files.</span></li></ul></li><li><p><span>Take a moment to analyze how the Athena </span><strong><span>CREATE TABLE</span></strong><span> statement is formed.</span></p><ul><li><span>It creates a database column for each of the standard name-value pairs in each JSON-formatted CloudTrail log entry. Refer to the image of the JSON format of a typical log entry in Task 3.4 to confirm this information.</span></li><li><span>At the bottom of the </span><strong><span>CREATE TABLE SQL</span></strong><span> statement, notice the </span><strong><span>LOCATION</span></strong><span> statement. This indicates the Amazon S3 location where the table data will be stored. In this case, the data is already there. You are defining the table schema that will be used to parse existing JSON-structured data.</span></li><li><span>For details on CloudTrail record structure, see </span><a href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html" target="_blank" rel="noopener noreferrer"></a><a href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html" target="_blank" class="url" rel="noopener noreferrer">https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html</a><span>.</span></li><li><span>For details on how this Athena table was created, see the </span><strong><span>CREATE EXTERNAL TABLE</span></strong><span> document at </span><a href="https://docs.aws.amazon.com/athena/latest/ug/cloudtrail-logs.html" target="_blank" rel="noopener noreferrer"></a><a href="https://docs.aws.amazon.com/athena/latest/ug/cloudtrail-logs.html" target="_blank" class="url" rel="noopener noreferrer">https://docs.aws.amazon.com/athena/latest/ug/cloudtrail-logs.html</a><span>.</span></li></ul></li><li><p><span>After you are done analyzing the </span><strong><span>CREATE TABLE</span></strong><span> details, choose </span><span id="ssb_orange"><strong><span>Create table</span></strong></span><span>.</span></p><p><span>The table is created with a default name that includes the name of the S3 bucket.</span></p></li><li><p><span>From the </span><strong><span>Services</span></strong><span> menu, choose </span><strong><span>Analytics</span></strong><span> then the </span><strong><span>Athena</span></strong><span> service.</span></p></li></ol><p>&nbsp;</p><h3 id="task-42-analyze-logs-using-athena"><span>Task 4.2: Analyze logs using Athena</span></h3><p><span>The advantage of using Athena is that you can now run SQL queries over your log data.</span></p><ol start="61"><li><p><span>If you do not already see the </span><strong><span>Athena Query Editor</span></strong><span>, choose </span><strong><span>Explore query editor</span></strong><span> and it should then display.</span></p><p><span>If a </span><strong><span>Tutorial</span></strong><span> screen appears, choose the </span><strong><span>X</span></strong><span> in the top corner to exit out of it.</span></p></li><li><p><span>In the left panel of the </span><strong><span>Athena Query Editor</span></strong><span>, you should see the </span><strong><span>cloudtrail_logs_monitoring####</span></strong><span> table.</span></p><p><span>Select </span><strong><span>+</span></strong><span> beside the table to reveal the column names.</span></p><p><strong><span>Analysis</span></strong><span>: Notice how each standard child element that exists in a CloudTrail log record in JSON format has a corresponding column name in this database. The </span><strong><span>useridentity</span></strong><span> database column is a struct type, because it contains more than a single name-value pair. Similarly, the </span><strong><span>resources</span></strong><span> database column is an array.</span></p></li><li><p><span>Start by setting up a query results location and then running a simple query to get an idea of the data that is available in the logs.</span></p><p><span>On the menu bar at the upper right of the page, choose </span><strong><span>Settings</span></strong><span> followed by </span><strong><span>Manage</span></strong><span>.</span></p><ul><li><p><span>Set </span><strong><span>Location of query result</span></strong><span> to </span><code>s3://monitoring####/results/</code><span> and replace </span><em><span>monitoring####</span></em><span> with the name of the bucket you created earlier.</span></p></li><li><p><span>Choose </span><strong><span>Save</span></strong><span>.</span></p></li><li><p><span>Select the </span><strong><span>Editor</span></strong><span> table and paste the following SQL query into the </span><strong><span>Query 1</span></strong><span> panel. Replace </span><em><span>####</span></em><span> with the numbers in your actual table, and choose </span><strong><span>Run</span></strong><span>.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="sql"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="sql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span> <span class="cm-operator">*</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">FROM</span> cloudtrail_logs_monitoring<span class="cm-comment">####</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">LIMIT</span> <span class="cm-number">5</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 74px;"></div><div class="CodeMirror-gutters" style="display: none; height: 74px;"></div></div></div></pre></li></ul><p><span>This query returns five rows of data. Look at the result set (scroll to the right in the </span><strong><span>Results</span></strong><span> panel to see additional column data).</span></p><p><span>Focus on the columns </span><strong><span>useridentity</span></strong><span>, </span><strong><span>eventtime</span></strong><span>, </span><strong><span>eventsource</span></strong><span>, </span><strong><span>eventname</span></strong><span>, and </span><strong><span>requestparameters</span></strong><span>, which contain the most valuable information to help you find the origin of the hack.</span>
+<span>  </span><br><span>The </span><strong><span>useridentity</span></strong><span> column has many details that make it more difficult to read though. You now return only the user name for that column.</span></p></li><li><p><span>Run a new query that selects only those columns that were previously mentioned. This time, limit the results to 30 rows:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.1685px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">SELECT useridentity.userName, eventtime, eventsource, eventname, requestparameters</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">FROM cloudtrail_logs_monitoring####</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">LIMIT 30</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 99px;"></div><div class="CodeMirror-gutters" style="display: none; height: 99px;"></div></div></div></pre><p><span>You should now be able to find out who modified the security group that is associated with the Café Web Server instance.</span></p></li></ol><p>&nbsp;</p><h2 id="challenge-identify-the-hacker"><span>Challenge: Identify the hacker</span></h2><p><span>In this section of the activity, you try to discover the log entry that includes the essential information about who hacked the website. Specific steps are not provided. Instead, you must experiment with running different queries until you find the information that you are looking for.</span></p><p><span>Tips:</span></p><ul><li><p><strong><span>Tip 1:</span></strong><span> Look at the data that was returned by the last command that you ran. Even if none of the log entry details that display are the log entry you are looking for, they still give you an indication of what kinds of data the different columns contain. Don't be afraid to experiment with running modified SQL queries. ChooseA the </span><strong><span>+</span></strong><span> icon next to </span><strong><span>New query 1</span></strong><span> to create a second query tab. This way, you can preserve older queries without deleting them.</span></p></li><li><p><strong><span>Tip 2:</span></strong><span> Try filtering by events that are related to the Amazon EC2 service. Remember that you can add </span><strong><span>WHERE</span></strong><span> clauses, such as </span><code>WHERE eventsource = 'ec2.amazonaws.com'</code></p></li><li><p><strong><span>Tip 3:</span></strong><span> To ensure you are querying the entire log set, remove the </span><strong><span>LIMIT</span></strong><span> clause from your query.</span></p></li><li><p><strong><span>Tip 4:</span></strong><span> Take a look at the kind of data that is captured in the </span><strong><span>eventname</span></strong><span> column. Can you further refine your SQL query so that it looks for only events that contain the word </span><code>Security</code><span>? Remember that SQL allows you to use compound </span><strong><span>WHERE</span></strong><span> clauses that look for pattern matches (for example, </span><code>WHERE columnName = 'some value' AND otherColumnName LIKE '%part of some value%'</code><span>). </span></p></li><li><p><strong><span>Tip 5:</span></strong><span> After you have successfully filtered all security-related actions in the log, analyze the </span><strong><span>eventnames</span></strong><span> further. Do any of them look suspicious? Can you adjust the </span><strong><span>WHERE</span></strong><span> clause to search for a particular *</span><strong><span>eventname</span></strong><span>?</span></p></li><li><p><strong><span>Tip 6:</span></strong><span> If you are still looking for the entry that shows who opened port 22 to the world, here is a general query that is often useful to run. This query might help identify the action:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.1685px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">SELECT DISTINCT useridentity.userName, eventName, eventSource FROM cloudtrail_logs_monitoring#### WHERE from_iso8601_timestamp(eventtime) &gt; date_add('day', -1, now()) ORDER BY eventSource;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 99px;"></div><div class="CodeMirror-gutters" style="display: none; height: 99px;"></div></div></div></pre><p><span>This query returns a list of all users who were active in the account in the past day and the distinct actions they have taken.</span></p><p><span>You have successfully completed the challenge if you can identify the following information:</span></p><ul><li><span>The name of the AWS user who created the security hole in the Café Web Server security group</span></li><li><span>The exact time that they hacked the security group</span></li><li><span>The IP address from which they hacked it (copy this value to a text file for later reference)</span></li><li><span>The method they used to perform the hack (console or programmatic access)</span></li></ul><p><span>Congratulations! You have successfully uncovered the identity of the hacker!</span></p></li></ul><p>&nbsp;</p><h2 id="task-5-analyzing-the-hack-further-and-improving-security"><span>Task 5: Analyzing the hack further and improving security</span></h2><p><span>In this last task, you work to secure both your AWS account and the web server instance.</span></p><p>&nbsp;</p><h3 id="task-51-check-the-os-users"><span>Task 5.1: Check the OS users</span></h3><ol start="65"><li><p><span>In the terminal where you have an active SSH session to the web server instance, run the following command to find out who has recently logged into this operating system (OS):</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sudo aureport --auth</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre><p><span>There is evidence that a user other than ec2-user has logged in. Who is that chaos-user?</span></p></li><li><p><span>Run the </span><strong><span>who</span></strong><span> command to figure out who is currently logged in:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">who</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre><p><span>The user is still logged in! Get them off this instance right away!</span></p></li><li><p><span>Run the following command to try to remove the chaos-user OS user:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sudo userdel -r chaos-user</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre><p><span>That didn't work because they are still logged in. However, it did return the process number they are connected as.</span></p></li><li><p><span>In the command below, replace </span><strong><span>ProcNum</span></strong><span> with the process number returned by the last command. Run the adjusted command to stop the process that has the active chaos-user login session:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sudo kill -9 ProcNum</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre></li><li><p><span>Run the </span><strong><span>who</span></strong><span> command again to verify that the chaos-user OS user is no longer connected:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">who</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre><p><span>Now you (the ec2-user) should be the only user connected.</span></p></li><li><p><span>Run the following command to try to delete the chaos-user again:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sudo userdel -r chaos-user</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre><p><span>It should succeed this time.</span></p></li><li><p><span>Run the following command to verify no other suspicious OS users who can login:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sudo cat /etc/passwd | grep -v nologin</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre><p><span>Note that the grep part of the command you just ran filtered out the OS users who do not have a login.</span></p><p><span>The </span><strong><span>root</span></strong><span>, </span><strong><span>sync</span></strong><span>, </span><strong><span>shutdown</span></strong><span>, and </span><strong><span>halt</span></strong><span> users are all standard OS users in Amazon Linux, so there are no other concerning user logins on this instance.</span></p></li></ol><p>&nbsp;</p><h3 id="task-52-update-ssh-security"><span>Task 5.2: Update SSH security</span></h3><ol start="72"><li><p><span>Analyze SSH settings on the instance.</span></p><p><span>You have removed the OS user who hacked into the instance, but how did they manage to connect to the EC2 instance by using SSH in the first place?</span></p><p><span>You have been careful about who has access to the key pair file. However, maybe you should check the SSH settings on this instance.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sudo ls -l /etc/ssh/sshd_config</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre><p><span>Notice the last modified timestamp for the file. This file was modified today! That is concerning.</span></p></li><li><p><span>Run the following command to edit the SSH configuration file in the VI editor:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sudo vi /etc/ssh/sshd_config</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre><ul><li><span>Analyze the details of this file. Enter </span><code>:set number</code><span> to see the line numbers in this file.</span></li><li><span>Notice on line 61 that password authentication is enabled. That is definitely not a security best practice! That means that anyone who knows (or can correctly guess) the username and password combination of an OS user can remotely access this instance without using an SSH key pair. This setting needs to be corrected.</span></li><li><span>Move your cursor (using the arrow up or down keys) to the </span><strong><span>PasswordAuthentication yes</span></strong><span> line and comment it out.</span></li></ul><p><strong><span>Tip:</span></strong><span> Enter </span><code>a</code><span> on your keyboard to enter </span><strong><span>edit mode</span></strong><span> in VI, and add a </span><code>#</code><span> character at the start of the line.</span></p><ul><li><span>Next, move your cursor to the </span><strong><span>#PasswordAuthentication no</span></strong><span> line (line 63) by using the arrow keys and uncomment this line (remove the </span><strong><span>#</span></strong><span> character).</span></li><li><span>Choose the </span><strong><span>Esc key</span></strong><span> on your keyboard to exit edit mode.</span></li><li><strong><span>Save</span></strong><span> the changes, and exit the VI editor using the </span><code>:wq</code><span> command.</span></li></ul></li><li><p><span>Run the following command to restart the SSH service so that the changes go into effect:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sudo service sshd restart</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="display: none; height: 25px;"></div></div></div></pre></li></ol><p><span>Note: If running the command above interrupts your SSH connection, reestablish the SSH connection before continuing on to the next step.</span></p><ol start="75"><li><p><span>Finally, in the EC2 console, return to the Web Server security group settings.</span></p><p><span>With the Web Server security group selected, go to the </span><strong><span>Inbound</span></strong><span> tab, and choose </span><strong><span>Edit</span></strong><span>.</span></p><p><span>Delete the inbound rule that allows port 22 access from 0.0.0.0/0 (the one the hacker created).</span></p></li><li><p><strong><span>Save</span></strong><span> the change.</span></p><p><span>Nice work! You have kicked the hacker out of this instance and remove the login account that they used. You also updated the SSH settings so that only users who have the correct key pair and the same source IP address as you can connect to it.</span></p></li></ol><p>&nbsp;</p><h3 id="task-53-fix-the-website"><span>Task 5.3: Fix the website</span></h3><p><span>Now that the hacker no longer has access to this instance, you can fix the issue with the website.</span></p><ol start="77"><li><p><span>Run the following command to navigate to the directory where the website image files are held and review the contents:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.3375px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">cd /var/www/html/cafe/images/</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">ls -l</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 49px;"></div><div class="CodeMirror-gutters" style="display: none; height: 49px;"></div></div></div></pre><p><span>It looks like the hacker created a backup of the original file.</span></p></li><li><p><span>Run the following command to restore the original graphic on the website.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.1685px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sudo mv Coffee-and-Pastries.backup Coffee-and-Pastries.jpg</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 49px;"></div><div class="CodeMirror-gutters" style="display: none; height: 49px;"></div></div></div></pre></li><li><p><span>To test the fix, reload the </span><a href="http://webserverip/cafe" target="_blank" class="url" rel="noopener noreferrer">http://WebServerIP/cafe</a><span> website in the browser.</span></p><p><strong><span>Tip:</span></strong><span> You may need to press and hold the Shift key and choose the browser refresh button to see the change.</span></p><p><span>That looks better!</span></p></li></ol><p>&nbsp;</p><h3 id="task-54-delete-the-aws-hacker-user"><span>Task 5.4: Delete the AWS hacker user</span></h3><p><span>Recall that the hacker not only accessed the EC2 instance hosting the website but also managed to run an AWS CLI command that opened port 22 in the security group to the entire internet. In this step, you remove the chaos AWS Identity and Access Management (IAM) user from the account.</span></p><ol start="80"><li><p><span>In the AWS Management Console, choose the </span><strong><span>Services</span></strong><span> menu, and choose </span><strong><span>IAM</span></strong><span>.</span></p></li><li><p><span>Choose the </span><strong><span>Users</span></strong><span> link, and select the check box next to the chaos user.</span></p></li><li><p><span>Choose </span><strong><span>Delete</span></strong><span>, enter the users name and select </span><strong><span>Delete</span></strong><span>.</span></p><p><span>Nice work! That chaos user shouldn't be causing any trouble in the AWS account anymore.</span></p><p><strong><span>Update from Café</span></strong></p><p><img src="./lab187_files/Coffee-Shop.png" alt="cafe scene"></p><p><span>Everyone at the Café is relieved that Sofîa was able to uncover the identity of the person who committed the hack and remove their access to the web server and to the AWS account.</span></p><p><span>In the end, the team members were lucky that it looks like the hacker was just trying to have fun. However, they all know that the hacker could have caused serious damage. Everyone on the team at the Café who participates in updating and maintaining the website now knows how important it is to keep the site secure. They are also definitely going to continue to use CloudTrail as a key tool for auditing activity on their AWS account.</span></p></li></ol><p>&nbsp;</p><h2 id="activity-complete"><span>Activity complete</span></h2><p><i class="icon-flag-checkered"></i><span> Congratulations! You have completed the lab.</span></p><ol start="83"><li><p><span>Choose </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> at the top of this page, and then choose </span><span id="ssb_blue"><span>Yes</span></span><span> to confirm that you want to end the lab.  </span></p><p><span>A panel appears indicating that </span><strong><span>DELETE has been initiated... You may close this message box now.</span></strong></p></li><li><p><span>Choose the </span><strong><span>X</span></strong><span> in the top-right corner to close the panel.</span></p></li></ol><p>&nbsp;</p><h2 id="additional-resources"><span>Additional resources</span></h2><p><span>For more information about AWS Training and Certification, see </span><a href="https://aws.amazon.com/training/" target="_blank" class="url" rel="noopener noreferrer">https://aws.amazon.com/training/</a><span>.</span></p><p><em><span>Your feedback is welcome and appreciated.</span></em></p><p><span>If you would like to share any suggestions or corrections, please provide the details in our </span><a href="https://support.aws.amazon.com/#/contacts/aws-training" target="_blank" rel="noopener noreferrer"><span>AWS Training and Certification Contact Form</span></a><span>.</span></p><p><em><span>© 2022 Amazon Web Services, Inc. and its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.</span></em></p></div></div>
+<script defer="" src="./lab187_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;97b73fe5fc56cb54&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.8.0&quot;,&quot;token&quot;:&quot;a73834a4a1444e9ab89e8da06da41720&quot;}" crossorigin="anonymous"></script>
+
+</body></html>
